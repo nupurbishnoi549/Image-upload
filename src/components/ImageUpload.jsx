@@ -47,12 +47,11 @@ function SingleImageUpload() {
                     onChange={handleImageChange}
                     className="hidden"
                 />
-
                 {preview && (
-                    <div className="relative w-full max-h-96">
+                    <div className="relative w-full max-h-[400px]">
                         <button
                             onClick={handleRemoveImage}
-                            className="absolute top-[6%] right-[-2%] text-white cursor-pointer bg-red-500 hover:bg-red-600 rounded-full w-8 h-8 flex items-center justify-center shadow-md z-10"
+                            className="absolute md:top-[9%] md:right-[-2%] top-[12%] right-[-4%] text-white cursor-pointer bg-red-500 hover:bg-red-600 rounded-full w-8 h-8 flex items-center justify-center shadow-md z-10"
                             title="Remove image"
                         >
                             &times;
@@ -61,7 +60,7 @@ function SingleImageUpload() {
                         <img
                             src={preview}
                             alt="Preview"
-                            className="w-full max-h-72 rounded-xl object-contain shadow-lg"
+                            className="w-[380px] md:h-[300px] h-[216px] rounded-xl object-contain bg-white"
                         />
                     </div>
                 )}
