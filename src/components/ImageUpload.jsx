@@ -30,7 +30,7 @@ function SingleImageUpload() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-green-300 via-sky-400 to-emerald-200 flex items-center justify-center px-4">
-            <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md text-center space-y-6">
+            <div className="bg-green-100 p-8 rounded-2xl shadow-2xl w-full max-w-md text-center space-y-6">
                 <h2 className="text-2xl font-bold text-sky-700">Upload an Image</h2>
 
                 <label
@@ -47,6 +47,7 @@ function SingleImageUpload() {
                     onChange={handleImageChange}
                     className="hidden"
                 />
+
                 {preview && (
                     <div className="relative w-full max-h-[400px]">
                         <button
